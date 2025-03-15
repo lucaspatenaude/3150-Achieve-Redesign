@@ -2,7 +2,7 @@
 
 * Lucas Patenaude
 * Alex Frachetti
-* Michael Stich
+* Michael
 
 # 📌 Ideas
 
