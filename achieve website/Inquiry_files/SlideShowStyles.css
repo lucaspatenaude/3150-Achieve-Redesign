@@ -1,0 +1,137 @@
+﻿.SlideContainer {
+	box-sizing: border-box;
+	overflow: hidden;
+	width: 100%;
+	padding: 0px;
+	text-align: center;
+	z-index: 1;
+}
+
+	.SlideContainer:hover .SlideArrow {
+		filter: alpha(opacity=50);
+		opacity: .5;
+	}
+	/*.SlideContainer:hover .Play {
+		display: block;
+	}*/
+
+
+	/*.SlideContainer:hover {
+		display: block;
+		border-color: green !important;
+	}
+	.SlideContainer .SlideArrow:hover {
+		display: block;
+		background-color: red;
+	}
+
+	.parent:hover span{
+border: 10px solid red;
+}   
+
+.parent span:hover{
+border: 10px solid green;
+}*/ 
+
+	/*.parent:hover span:not(:hover) {
+    border: 10px solid red;
+}*/
+
+.SlideCaption:hover {
+	background-color: yellow;
+	
+}
+
+
+.Play {
+	display: none;
+	box-sizing: border-box;
+	position: absolute;
+	overflow: hidden;
+	padding: 0px;
+	top: 50%;
+	left: 50%;
+	margin-left: -10px;
+	width: 50px;
+	height: 55px;
+	/*font-family: Arial;*/
+	font-size: 40px;
+	background-color: #000000;
+	color: #ffffff;
+	text-decoration: none;
+	filter: alpha(opacity=50);
+	opacity: .5;
+	z-index: 1000;
+}
+
+.SlideArrow {
+	display: none;
+	overflow: hidden;
+	position: absolute;
+	filter: alpha(opacity=10);
+	opacity: .1;
+	top: 50%;
+	/*transform: translateY(-50%);*/
+	z-index: 1000;
+	width: 35px;
+	height: 45px;
+	background-color: #000000;
+	color: #ffffff;
+	border: solid 1px #000000;
+	font-family: arial;
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+}
+
+.SAL {
+	left: 0%;
+}
+
+.SAR {
+	right: 0%;
+}
+
+.SlideImage {
+	display: none;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.SSControlsWrap {position: relative;}
+
+.SSImageContainer {
+	position: relative;
+	overflow: hidden;
+	box-sizing: border-box;
+	width: 100%;
+	height: 0px;
+	padding: 0px;
+}
+
+.SSPhotoWrap {
+	position: absolute;
+	box-sizing: border-box;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+.SSCaptionContainer {
+	margin-top: 10px;
+	margin-bottom: 5px;
+	z-index: 20;
+}
+
+.SlideCaption {
+	display: none;
+	font-family: Arial, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #000000;
+	clear: both;
+	z-index: 50;
+}

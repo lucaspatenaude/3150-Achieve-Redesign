@@ -1,0 +1,449 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0040)https://www.achievelifeskills.org/Events -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Events</title>
+<link href="./Events_files/SlideShowStyles.css" rel="stylesheet" type="text/css"><link href="./Events_files/CSS.aspx.css" type="text/css" rel="stylesheet">
+<script async="" src="./Events_files/moosend-tracking.min.js"></script><script type="text/javascript" src="./Events_files/JavaEndUser.js"></script>
+<script type="text/javascript" src="./Events_files/SlideShow.js"></script>
+<script type="text/javascript">
+
+</script>
+<script>
+
+//load TrackerJS
+
+!function(t,n,e,o,a){function d(t){var n=~~(Date.now()/3e5),o=document.createElement(e);o.async=!0,o.src=t+"?ts="+n;var a=document.getElementsByTagName(e)[0];a.parentNode.insertBefore(o,a)}t.MooTrackerObject=a,t[a]=t[a]||function(){return t[a].q?void t[a].q.push(arguments):void(t[a].q=[arguments])},window.attachEvent?window.attachEvent("onload",d.bind(this,o)):window.addEventListener("load",d.bind(this,o),!1)}(window,document,"script","//cdn.stat-track.com/statics/moosend-tracking.min.js","mootrack");
+
+//tracker has to be initialized otherwise it will generate warnings and wont sendtracking events
+
+mootrack('init', 'a53adec8-fbb1-406b-9743-7dbf5c0345d0');
+
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="./Events_files/css2" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script defer="" type="text/javascript">
+
+function RearrangeDom() {
+
+  var siteHeaderExt = document.getElementById("SiteHeaderExt");
+  var topStrip = document.getElementById("top-strip");
+  var siteHeader = document.getElementById("SiteHeader");
+  var menu = document.getElementById("TopMenuExt");
+
+  siteHeader.appendChild(menu);
+  menu.style.visibility = "visible";
+
+  siteHeaderExt.insertBefore(topStrip , siteHeaderExt.firstChild);
+
+  topStrip.style.visibility = "visible";
+  siteHeaderExt.style.visibility = "visible";
+
+}
+
+window.onload = RearrangeDom;
+
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+
+    function SubmitMoosend(event) {
+
+      event.preventDefault();
+
+      var name = document.getElementById("txtName").value;
+      var email = document.getElementById("txtEmail").value;
+
+      var data = { Name: name, Email: email };
+
+      var hostname = location.hostname;
+console.log("hostname", hostname);
+       var url = "";
+
+     if(hostname == "www.achievelifeskills.org") {
+        url = "https://www.achievelifeskills.org/AddToMoosend";
+      }
+     if(hostname == "www.littleengineeatery.org") {
+        url = "https://www.littleengineeatery.org/AddToMoosend";
+      }
+      if(hostname == "gigshowcase.local") {
+         url = "http://gigshowcase.local:81/AddToMoosend";
+      }
+
+
+console.log("url", url);
+
+
+      fetch(url , {
+        //fetch("http://gigshowcase.local:81/AddToMoosend", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data)
+      })
+          .then(httpResponse => {
+
+          let statusCode = httpResponse.status;
+          let statusText = httpResponse.statusText;
+            //return httpResponse.json();
+            return httpResponse.text();
+
+        })
+        .then((text) => {
+          console.log("Moosend response", text);
+          if (text == '"Ok"') {
+            alert("Success! Thank you for signing up.");
+          }
+          else {
+           alert("Error: " + text);
+          }
+       })
+        .catch((err) => {
+          console.log(err);
+        });
+
+    }
+
+</script>
+<title>
+
+</title></head>
+
+<body>
+
+<form name="form1" method="post" action="https://www.achievelifeskills.org/Events" id="form1">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE5MTE5NTg4NjYPZBYEAgEPZBYIZg8WAh4EVGV4dAUXPHRpdGxlPkV2ZW50czwvdGl0bGU+DQpkAgIPFgIfAAVyPGxpbmsgaHJlZj0iL1N0eWxlU2hlZXRzL0NTUy5hc3B4P1NpdGVJRD03MjMmQ29udGVudFR5cGU9UGFnZSZDb250ZW50SUQ9MTQzMzYiIHR5cGU9InRleHQvY3NzIiByZWw9InN0eWxlc2hlZXQiIC8+ZAIEDxYCHwBlZAIGDxYCHwAFgho8c2NyaXB0Pg0KDQovL2xvYWQgVHJhY2tlckpTDQoNCiFmdW5jdGlvbih0LG4sZSxvLGEpe2Z1bmN0aW9uIGQodCl7dmFyIG49fn4oRGF0ZS5ub3coKS8zZTUpLG89ZG9jdW1lbnQuY3JlYXRlRWxlbWVudChlKTtvLmFzeW5jPSEwLG8uc3JjPXQrIj90cz0iK247dmFyIGE9ZG9jdW1lbnQuZ2V0RWxlbWVudHNCeVRhZ05hbWUoZSlbMF07YS5wYXJlbnROb2RlLmluc2VydEJlZm9yZShvLGEpfXQuTW9vVHJhY2tlck9iamVjdD1hLHRbYV09dFthXXx8ZnVuY3Rpb24oKXtyZXR1cm4gdFthXS5xP3ZvaWQgdFthXS5xLnB1c2goYXJndW1lbnRzKTp2b2lkKHRbYV0ucT1bYXJndW1lbnRzXSl9LHdpbmRvdy5hdHRhY2hFdmVudD93aW5kb3cuYXR0YWNoRXZlbnQoIm9ubG9hZCIsZC5iaW5kKHRoaXMsbykpOndpbmRvdy5hZGRFdmVudExpc3RlbmVyKCJsb2FkIixkLmJpbmQodGhpcyxvKSwhMSl9KHdpbmRvdyxkb2N1bWVudCwic2NyaXB0IiwiLy9jZG4uc3RhdC10cmFjay5jb20vc3RhdGljcy9tb29zZW5kLXRyYWNraW5nLm1pbi5qcyIsIm1vb3RyYWNrIik7DQoNCi8vdHJhY2tlciBoYXMgdG8gYmUgaW5pdGlhbGl6ZWQgb3RoZXJ3aXNlIGl0IHdpbGwgZ2VuZXJhdGUgd2FybmluZ3MgYW5kIHdvbnQgc2VuZHRyYWNraW5nIGV2ZW50cw0KDQptb290cmFjaygnaW5pdCcsICdhNTNhZGVjOC1mYmIxLTQwNmItOTc0My03ZGJmNWMwMzQ1ZDAnKTsNCg0KPC9zY3JpcHQ+DQoNCjxsaW5rIHJlbD0icHJlY29ubmVjdCIgaHJlZj0iaHR0cHM6Ly9mb250cy5nb29nbGVhcGlzLmNvbSI+DQo8bGluayByZWw9InByZWNvbm5lY3QiIGhyZWY9Imh0dHBzOi8vZm9udHMuZ3N0YXRpYy5jb20iIGNyb3Nzb3JpZ2luPg0KPGxpbmsgaHJlZj0iaHR0cHM6Ly9mb250cy5nb29nbGVhcGlzLmNvbS9jc3MyP2ZhbWlseT1TcGVjdHJhbCtTQzp3Z2h0QDIwMDs0MDAmZGlzcGxheT1zd2FwIiByZWw9InN0eWxlc2hlZXQiPg0KDQo8bWV0YSBuYW1lPSJ2aWV3cG9ydCIgY29udGVudD0id2lkdGg9ZGV2aWNlLXdpZHRoLCBpbml0aWFsLXNjYWxlPTEiIC8+DQoNCjxzY3JpcHQgZGVmZXIgdHlwZT0idGV4dC9qYXZhc2NyaXB0Ij4NCg0KZnVuY3Rpb24gUmVhcnJhbmdlRG9tKCkgew0KDQogIHZhciBzaXRlSGVhZGVyRXh0ID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoIlNpdGVIZWFkZXJFeHQiKTsNCiAgdmFyIHRvcFN0cmlwID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoInRvcC1zdHJpcCIpOw0KICB2YXIgc2l0ZUhlYWRlciA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJTaXRlSGVhZGVyIik7DQogIHZhciBtZW51ID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoIlRvcE1lbnVFeHQiKTsNCg0KICBzaXRlSGVhZGVyLmFwcGVuZENoaWxkKG1lbnUpOw0KICBtZW51LnN0eWxlLnZpc2liaWxpdHkgPSAidmlzaWJsZSI7DQoNCiAgc2l0ZUhlYWRlckV4dC5pbnNlcnRCZWZvcmUodG9wU3RyaXAgLCBzaXRlSGVhZGVyRXh0LmZpcnN0Q2hpbGQpOw0KDQogIHRvcFN0cmlwLnN0eWxlLnZpc2liaWxpdHkgPSAidmlzaWJsZSI7DQogIHNpdGVIZWFkZXJFeHQuc3R5bGUudmlzaWJpbGl0eSA9ICJ2aXNpYmxlIjsNCg0KfQ0KDQp3aW5kb3cub25sb2FkID0gUmVhcnJhbmdlRG9tOw0KDQo8L3NjcmlwdD4NCg0KDQoNCg0KDQoNCjxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0Ij4NCg0KICAgIGZ1bmN0aW9uIFN1Ym1pdE1vb3NlbmQoZXZlbnQpIHsNCg0KICAgICAgZXZlbnQucHJldmVudERlZmF1bHQoKTsNCg0KICAgICAgdmFyIG5hbWUgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgidHh0TmFtZSIpLnZhbHVlOw0KICAgICAgdmFyIGVtYWlsID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoInR4dEVtYWlsIikudmFsdWU7DQoNCiAgICAgIHZhciBkYXRhID0geyBOYW1lOiBuYW1lLCBFbWFpbDogZW1haWwgfTsNCg0KICAgICAgdmFyIGhvc3RuYW1lID0gbG9jYXRpb24uaG9zdG5hbWU7DQpjb25zb2xlLmxvZygiaG9zdG5hbWUiLCBob3N0bmFtZSk7DQogICAgICAgdmFyIHVybCA9ICIiOw0KDQogICAgIGlmKGhvc3RuYW1lID09ICJ3d3cuYWNoaWV2ZWxpZmVza2lsbHMub3JnIikgew0KICAgICAgICB1cmwgPSAiaHR0cHM6Ly93d3cuYWNoaWV2ZWxpZmVza2lsbHMub3JnL0FkZFRvTW9vc2VuZCI7DQogICAgICB9DQogICAgIGlmKGhvc3RuYW1lID09ICJ3d3cubGl0dGxlZW5naW5lZWF0ZXJ5Lm9yZyIpIHsNCiAgICAgICAgdXJsID0gImh0dHBzOi8vd3d3LmxpdHRsZWVuZ2luZWVhdGVyeS5vcmcvQWRkVG9Nb29zZW5kIjsNCiAgICAgIH0NCiAgICAgIGlmKGhvc3RuYW1lID09ICJnaWdzaG93Y2FzZS5sb2NhbCIpIHsNCiAgICAgICAgIHVybCA9ICJodHRwOi8vZ2lnc2hvd2Nhc2UubG9jYWw6ODEvQWRkVG9Nb29zZW5kIjsNCiAgICAgIH0NCg0KDQpjb25zb2xlLmxvZygidXJsIiwgdXJsKTsNCg0KDQogICAgICBmZXRjaCh1cmwgLCB7DQogICAgICAgIC8vZmV0Y2goImh0dHA6Ly9naWdzaG93Y2FzZS5sb2NhbDo4MS9BZGRUb01vb3NlbmQiLCB7DQogICAgICAgIG1ldGhvZDogIlBPU1QiLA0KICAgICAgICBoZWFkZXJzOiB7DQogICAgICAgICAgIkNvbnRlbnQtVHlwZSI6ICJhcHBsaWNhdGlvbi9qc29uIiwNCiAgICAgICAgfSwNCiAgICAgICAgYm9keTogSlNPTi5zdHJpbmdpZnkoZGF0YSkNCiAgICAgIH0pDQogICAgICAgICAgLnRoZW4oaHR0cFJlc3BvbnNlID0+IHsNCg0KICAgICAgICAgIGxldCBzdGF0dXNDb2RlID0gaHR0cFJlc3BvbnNlLnN0YXR1czsNCiAgICAgICAgICBsZXQgc3RhdHVzVGV4dCA9IGh0dHBSZXNwb25zZS5zdGF0dXNUZXh0Ow0KICAgICAgICAgICAgLy9yZXR1cm4gaHR0cFJlc3BvbnNlLmpzb24oKTsNCiAgICAgICAgICAgIHJldHVybiBodHRwUmVzcG9uc2UudGV4dCgpOw0KDQogICAgICAgIH0pDQogICAgICAgIC50aGVuKCh0ZXh0KSA9PiB7DQogICAgICAgICAgY29uc29sZS5sb2coIk1vb3NlbmQgcmVzcG9uc2UiLCB0ZXh0KTsNCiAgICAgICAgICBpZiAodGV4dCA9PSAnIk9rIicpIHsNCiAgICAgICAgICAgIGFsZXJ0KCJTdWNjZXNzISBUaGFuayB5b3UgZm9yIHNpZ25pbmcgdXAuIik7DQogICAgICAgICAgfQ0KICAgICAgICAgIGVsc2Ugew0KICAgICAgICAgICBhbGVydCgiRXJyb3I6ICIgKyB0ZXh0KTsNCiAgICAgICAgICB9DQogICAgICAgfSkNCiAgICAgICAgLmNhdGNoKChlcnIpID0+IHsNCiAgICAgICAgICBjb25zb2xlLmxvZyhlcnIpOw0KICAgICAgICB9KTsNCg0KICAgIH0NCg0KPC9zY3JpcHQNCg0KPG1ldGEgbmFtZT0ndmlld3BvcnQnIGNvbnRlbnQ9J3dpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xLCBtaW5pbXVtLXNjYWxlPTEnIC8+DQpkAgMPFgIeBmFjdGlvbgUHL0V2ZW50cxYKAgEPFgIfAAWFAwoKCgoKCjxkaXYgaWQ9InRvcC1zdHJpcCIgc3R5bGU9InZpc2liaWxpdHk6IGhpZGRlbjsiPgoKQVBQTFkgTk9XOiBBY2hpZXZlIGlzIGhpcmluZyBhIHNwcmluZy9zdW1tZXIgPGEgaHJlZj0iQXBwbHkiPnlvdXRoIG1lbnRvcjwvYT4gdG8gaGVscCBzdXBwb3J0IDxhIGhyZWY9IkFwcGx5Ij5wcm9ncmFtIHBhcnRpY2lwYW50czwvYT4gYW5kIGhpcmluZyBwcm9ncmFtIHBhcnRpY2lwYW50cyEKCjwvZGl2PgoKCgoKCgoKCjxkaXYgaWQ9InNpdGUtaGVhZGVyLWxvZ28iPgo8aW1nIGFsdD0iIiBkYXRhLWVkaXR0eXBlPSJJbWFnZSIgaWQ9IiIgc3JjPSIvRW5kVXNlckZpbGVzLzc3NTQwLmpwZyI+CjwvZGl2PgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKZAIDDxYCHwAFtgw8YSBpZD0nVG9nZ2xlTWVudScgb25jbGljaz0nSmF2YXNjcmlwdDpTaG93TWFpbk1lbnUoKTsnPjxzcGFuIGlkPSdUb2dnbGVNZW51UGx1c01pbnVzJz4rPC9zcGFuPk1lbnU8L2E+DQo8dWwgaWQ9J01lbnVQYWNrYWdlJyBjbGFzcz0nSGlkZSc+DQo8bGkgY2xhc3M9J01lbnVJdGVtJz4NCjxhIGNsYXNzPSdNZW51VGV4dExpbmsnIGhyZWY9Jy8nPkhvbWU8L2E+DQo8L2xpPg0KPGxpIGNsYXNzPSdNZW51SXRlbSBIYXNTdWJNZW51Jz4NCjxhIGNsYXNzPSdNZW51VGV4dExpbmsnIG9uY2xpY2s9J0phdmFzY3JpcHQ6U2hvd1N1Yk1lbnUodGhpcyk7Jz5BYm91dDwvYT4NCjx1bCBjbGFzcz0nU3ViTWVudSBMZXZlbFR3byc+DQo8bGkgY2xhc3M9J1N1Yk1lbnVJdGVtJz4NCjxhIGNsYXNzPSdTdWJNZW51TGluaycgaHJlZj0nL0Fib3V0Jz5CYWNrZ3JvdW5kPC9hPg0KPC9saT4NCjxsaSBjbGFzcz0nU3ViTWVudUl0ZW0nPg0KPGEgY2xhc3M9J1N1Yk1lbnVMaW5rJyBocmVmPScvQWJvdXQjcHJlc3MnPlByZXNzPC9hPg0KPC9saT4NCjwvdWw+DQo8L2xpPg0KPGxpIGNsYXNzPSdNZW51SXRlbSBIYXNTdWJNZW51Jz4NCjxhIGNsYXNzPSdNZW51VGV4dExpbmsnIG9uY2xpY2s9J0phdmFzY3JpcHQ6U2hvd1N1Yk1lbnUodGhpcyk7Jz5Qcm9ncmFtczwvYT4NCjx1bCBjbGFzcz0nU3ViTWVudSBMZXZlbFR3byc+DQo8bGkgY2xhc3M9J1N1Yk1lbnVJdGVtJz4NCjxhIGNsYXNzPSdTdWJNZW51TGluaycgaHJlZj0nL0xpdHRsZS1FbmdpbmUtRWF0ZXJ5Jz5MaXR0bGUgRW5naW5lIEVhdGVyeTwvYT4NCjwvbGk+DQo8bGkgY2xhc3M9J1N1Yk1lbnVJdGVtJz4NCjxhIGNsYXNzPSdTdWJNZW51TGluaycgaHJlZj0nL0NvZmZlZS1TaG9wJz5Db2ZmZWUgU2hvcDwvYT4NCjwvbGk+DQo8bGkgY2xhc3M9J1N1Yk1lbnVJdGVtJz4NCjxhIGNsYXNzPSdTdWJNZW51TGluaycgaHJlZj0nL0FjaGlldmUtU29jaWFsJz5BY2hpZXZlIFNvY2lhbDwvYT4NCjwvbGk+DQo8L3VsPg0KPC9saT4NCjxsaSBjbGFzcz0nTWVudUl0ZW0gSGFzU3ViTWVudSc+DQo8YSBjbGFzcz0nTWVudVRleHRMaW5rJyBvbmNsaWNrPSdKYXZhc2NyaXB0OlNob3dTdWJNZW51KHRoaXMpOyc+Q29ubmVjdDwvYT4NCjx1bCBjbGFzcz0nU3ViTWVudSBMZXZlbFR3byc+DQo8bGkgY2xhc3M9J1N1Yk1lbnVJdGVtJz4NCjxhIGNsYXNzPSdTdWJNZW51TGluaycgaHJlZj0nL0FwcGx5Jz5BcHBseTwvYT4NCjwvbGk+DQo8bGkgY2xhc3M9J1N1Yk1lbnVJdGVtJz4NCjxhIGNsYXNzPSdTdWJNZW51TGluaycgaHJlZj0nL0lucXVpcnknPlZvbHVudGVlcjwvYT4NCjwvbGk+DQo8bGkgY2xhc3M9J1N1Yk1lbnVJdGVtJz4NCjxhIGNsYXNzPSdTdWJNZW51TGluaycgaHJlZj0nI2Zvb3Rlcic+Q29udGFjdCBVczwvYT4NCjwvbGk+DQo8L3VsPg0KPC9saT4NCjxsaSBjbGFzcz0nTWVudUl0ZW0nPg0KPGEgY2xhc3M9J01lbnVUZXh0TGluaycgaHJlZj0nL0RvbmF0ZSc+RG9uYXRlPC9hPg0KPC9saT4NCjxsaSBjbGFzcz0nTWVudUl0ZW0nPg0KPGEgY2xhc3M9J01lbnVUZXh0TGluayBNZW51TGlua09uJyBocmVmPScvRXZlbnRzJz5FdmVudHM8L2E+DQo8L2xpPg0KPC91bD5kAgUPFgIfAGVkAgkPFgIfAAXuHQoKCgoKCgoKCjxhIGlkPSJmb290ZXIiPjwvYT4KCgo8ZGl2IGRhdGEtZWRpdGFibGU9InRydWUiIHN0eWxlPSJ0ZXh0LWFsaWduOiBjZW50ZXI7Ij4KPHA+Q29ubmVjdCBXaXRoIFVzPC9wPgoKCgo8cD5Eb27igJl0IGxldCBGT01PIGdldCB5b3UgZG93biEgQ29uZmlybSB5b3VyIG5hbWUgYW5kIGVtYWlsIGJlbG93IHRvIHN0YXkgaW5mb3JtZWQgb2Ygd2hhdCB3ZeKAmXJlIGRvaW5nOjwvcD4KCgo8IS0tCjxwPkRvbuKAmXQgbGV0IEZPTU8gZ2V0IHlvdSBkb3duISBFbWFpbCB1cyBhdCA8YSBkYXRhLWVkaXR0eXBlPSJIeXBlcmxpbmsiIGRhdGEtaGx0eXBlPSIyIiBocmVmPSJtYWlsdG86aW5mb0BhY2hpZXZlbGlmZXNraWxscy5vcmciIHRhcmdldD0iX2JsYW5rIj5pbmZvQGFjaGlldmVsaWZlc2tpbGxzLm9yZzwvYT4gYW5kIHdlIHdpbGwgYWRkIHlvdSB0byBvdXIgbWFpbGluZyBsaXN0LiBTdGF5IGluZm9ybWVkIG9mIHdoYXQgd2XigJlyZSBkb2luZyE6PC9wPgo8L2Rpdj4KLS0+Cgo8IS0tc3RhcnQgZm9ybS0tPgoKCjxkaXYgY2xhc3M9InNpZ251cC1mb3JtIj4KCiAgICAgICAgPGRpdiBzdHlsZT0idGV4dC1hbGlnbjogbGVmdCI+CiAgICAgICAgICBOYW1lOjxicj4KICAgICAgICAgIDxpbnB1dCB0eXBlPSJ0ZXh0IiBpZD0idHh0TmFtZSI+CiAgICAgICAgICA8c3BhbiBjbGFzcz0iUmVkIj4qPC9zcGFuPgogICAgICAgIDwvZGl2PiAgICAKICAgICAgICA8ZGl2IHN0eWxlPSJ0ZXh0LWFsaWduOiBsZWZ0Ij4KICAgICAgICAgIEVtYWlsOjxicj4KICAgICAgICAgIDxpbnB1dCB0eXBlPSJ0ZXh0IiBpZD0idHh0RW1haWwiPgogICAgICAgICAgPHNwYW4gY2xhc3M9IlJlZCI+Kjwvc3Bhbj4KICAgICAgICA8L2Rpdj4KICAgICAgICA8ZGl2IHN0eWxlPSJ0ZXh0LWFsaWduOiBsZWZ0OyBtYXJnaW4tdG9wOiAxMHB4OyI+CiAgICAgICAgICA8YnV0dG9uIGNsYXNzPSJkb25hdGUtbGlnaHQiIG9uY2xpY2s9IkphdmFzY3JpcHQ6U3VibWl0TW9vc2VuZChldmVudCk7Ij5TaWduIFVwPC9idXR0b24+CiAgICAgICAgPC9kaXY+Cgo8L2Rpdj4KCjwhLS1lbmQgZm9ybS0tPgoKPHAgc3R5bGU9InRleHQtYWxpZ246IGNlbnRlcjsiPjxhIGRhdGEtZWRpdHR5cGU9Ikh5cGVybGluayIgZGF0YS1obHR5cGU9IjEiIGhyZWY9IkphdmFTY3JpcHQ6d2luZG93LmxvY2F0aW9uLmhyZWY9J0RvbmF0ZSc7IiBjbGFzcz0iZG9uYXRlLWRhcmsiIHN0eWxlPSJtYXJnaW4tbGVmdDogYXV0bzsgbWFyZ2luLXJpZ2h0OiBhdXRvOyI+RG9uYXRlIFRvZGF5PC9hPjwvcD4KCjxwIGRhdGEtZWRpdGFibGU9InRydWUiIHN0eWxlPSJ0ZXh0LWFsaWduOiBjZW50ZXI7Ij4KS2VlcCB1cCB3aXRoIG91ciBldmVudHMgb24gc29jaWFsIG1lZGlhPGJyPgoKPGEgZGF0YS1lZGl0dHlwZT0iSHlwZXJsaW5rIiBkYXRhLWhsdHlwZT0iMiIgaHJlZj0iaHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL0xpdHRsZUVuZ2luZUVhdGVyeSIgdGFyZ2V0PSJfYmxhbmsiPjxpbWcgYWx0PSIiIGlkPSIiIHNyYz0iL0VuZFVzZXJGaWxlcy83NzU5MC5wbmciIHN0eWxlPSJXaWR0aDogNDBweDsiPjwvYT4mbmJzcDsmbmJzcDs8YSBkYXRhLWVkaXR0eXBlPSJIeXBlcmxpbmsiIGRhdGEtaGx0eXBlPSIyIiBocmVmPSJodHRwczovL3d3dy5pbnN0YWdyYW0uY29tL0FjaGlldmVfTGl0dGxlRW5naW5lRWF0ZXJ5LyIgdGFyZ2V0PSJfYmxhbmsiPjxpbWcgYWx0PSIiIGlkPSIiIHNyYz0iL0VuZFVzZXJGaWxlcy83NzU5MS5wbmciIHN0eWxlPSJXaWR0aDogNDBweDsiPjwvYT4KCjwvcD4KCgoKCjxkaXYgY2xhc3M9InR3by1jb2wtd3JhcCIgZGF0YS1wYWdldGVtcGxhdGU9IlR3by1Db2wiPgo8ZGl2IGRhdGEtZWRpdGFibGU9InRydWUiPgo8cD5NYWlsaW5nIEFkZHJlc3M6PGJyPjE2NDE3IENSIDMyNTxicj5CdWVuYSBWaXN0YSwgQ08gODEyMTE8L3A+PHA+U3VtbWVyIEZvb2QgVHJhaWxlcjo8YnI+QlYgSGVyaXRhZ2UgTXVzZXVtPGJyPjUwNiBFIE1haW4gU3QuPGJyPkJ1ZW5hIFZpc3RhLCBDTyA4MTIxMTxicj48L3A+PHA+aW5mb0BhY2hpZXZlbGlmZXNraWxscy5vcmc8YnI+NzE5LjM5NS40MDA2PC9wPgo8L2Rpdj4KPGRpdiBkYXRhLWVkaXRhYmxlPSJ0cnVlIj4KPHA+SW5mbzo8YnI+PGEgZGF0YS1lZGl0dHlwZT0iSHlwZXJsaW5rIiBkYXRhLWhsdHlwZT0iMSIgaHJlZj0iSmF2YVNjcmlwdDp3aW5kb3cubG9jYXRpb24uaHJlZj0nSG9tZSc7Ij5Ib21lPGJyPjwvYT48YSBkYXRhLWVkaXR0eXBlPSJIeXBlcmxpbmsiIGRhdGEtaGx0eXBlPSIxIiBocmVmPSJKYXZhU2NyaXB0OndpbmRvdy5sb2NhdGlvbi5ocmVmPSdBYm91dCc7Ij5BYm91dDwvYT48YnI+PGEgZGF0YS1lZGl0dHlwZT0iSHlwZXJsaW5rIiBkYXRhLWhsdHlwZT0iMSIgaHJlZj0iSmF2YVNjcmlwdDp3aW5kb3cubG9jYXRpb24uaHJlZj0nSG9tZSNwcm9ncmFtcyc7Ij5Qcm9ncmFtczwvYT48L3A+Cgo8cD5BY3Rpb246PGJyPjxhIGRhdGEtZWRpdHR5cGU9Ikh5cGVybGluayIgZGF0YS1obHR5cGU9IjEiIGhyZWY9IkphdmFTY3JpcHQ6d2luZG93LmxvY2F0aW9uLmhyZWY9J0FwcGx5JzsiPkxlYXJuIEpvYiAmYW1wOyBMaWZlIFNraWxsczwvYT48YnI+PGEgZGF0YS1lZGl0dHlwZT0iSHlwZXJsaW5rIiBkYXRhLWhsdHlwZT0iMSIgaHJlZj0iSmF2YVNjcmlwdDp3aW5kb3cubG9jYXRpb24uaHJlZj0nQXBwbHknOyI+QmVjb21lIGEgWW91dGggTWVudG9yPC9hPjxicj48YSBkYXRhLWVkaXR0eXBlPSJIeXBlcmxpbmsiIGRhdGEtaGx0eXBlPSIxIiBocmVmPSJKYXZhU2NyaXB0OndpbmRvdy5sb2NhdGlvbi5ocmVmPSdBY2hpZXZlLVNvY2lhbCc7Ij5Kb2luIG91ciBTb2NpYWwgUHJvZ3JhbTwvYT48YnI+PGEgZGF0YS1lZGl0dHlwZT0iSHlwZXJsaW5rIiBkYXRhLWhsdHlwZT0iMSIgaHJlZj0iSmF2YVNjcmlwdDp3aW5kb3cubG9jYXRpb24uaHJlZj0nSW5xdWlyeSc7Ij5Wb2x1bnRlZXI8L2E+PGJyPjxhIGRhdGEtZWRpdHR5cGU9Ikh5cGVybGluayIgZGF0YS1obHR5cGU9IjEiIGhyZWY9IkphdmFTY3JpcHQ6d2luZG93LmxvY2F0aW9uLmhyZWY9J0lucXVpcnknOyI+TWVudG9yPC9hPjxicj48YSBkYXRhLWVkaXR0eXBlPSJIeXBlcmxpbmsiIGRhdGEtaGx0eXBlPSIxIiBocmVmPSJKYXZhU2NyaXB0OndpbmRvdy5sb2NhdGlvbi5ocmVmPSdEb25hdGUnOyI+RG9uYXRlPC9hPjxicj48YnI+PC9wPgo8L2Rpdj4KPC9kaXY+Cgo8ZGl2IGRhdGEtZWRpdGFibGU9InRydWUiIHN0eWxlPSJ0ZXh0LWFsaWduOiBjZW50ZXI7Ij4KVG8gcmVxdWVzdCBhbiBhY2NvbW1vZGF0aW9uIHRvIGFjY2VzcyBtYXRlcmlhbHMsIGluZm9ybWF0aW9uLCBhbmQvb3Igc2VydmljZXMsIHBsZWFzZSByZWFjaCBvdXQhPGJyPsKpJm5ic3A7QWNoaWV2ZSwgSW5jLiBkYmEgTGl0dGxlIEVuZ2luZSBFYXRlcnkgMjAxNy0yMDI1IHwgQSByZWdpc3RlcmVkIDUwMShjKSgzKSBFSU46IDM3LTE4NjA1NjYKPC9kaXY+CgoKCjwhLS0gICAgICAgCjxkaXYgY2xhc3M9IlJvdyIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6ICNmZmZmZmY7IGNvbG9yOiAjZmYwMDAwOyI+PGFzcDpsaXRlcmFsIGlkPSJsaXRSZXN1bHQiIHJ1bmF0PSJzZXJ2ZXIiPjwvYXNwOmxpdGVyYWw+PC9kaXY+Ci0tPgoKPCEtLQogICAgICAgIDxkaXYgY2xhc3M9IlJvdyIgc3R5bGU9ImZvbnQtc3R5bGU6IGl0YWxpYzsiPlByaXZhY3k6IFdlIHdpbGwgbmV2ZXIgc2VsbCBvciBzaGFyZSB5b3VyIGVtYWlsIGFkZHJlc3MhIFdlIHdvbid0IHNwYW0geW91LiAgT25seSBwZXJ0aW5lbnQgY29udGVudCB3aWxsIGJlIHNlbnQuPC9kaXY+Ci0tPgoKCgoKCgoKCjwvZGl2PgoKCgoKCgoKCgoKCgoKCgoKCmQCCw8WAh8ABY8BPGRpdiBpZD0nR2lnc2hvd2Nhc2VGb290ZXInPg0KPGEgdGFyZ2V0PSdfYmxhbmsnIGlkPSdHaWdzaG93Y2FzZUxvZ28nIGhyZWY9J2h0dHA6Ly9naWdzaG93Y2FzZS5jb20vQWQuYXNweD9TaXRlSUQ9NzIzJz5wb3dlcmVkIGJ5PC9hPg0KPC9kaXY+DQpkZPhep0rYF/W1arBeJY3pNgzv+O0VtR1PIahxfVfSlE9H">
+</div>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="3989C74E">
+</div>
+	
+<!--Main-->
+<div id="Main">
+			
+<!--Site Header-->
+<div id="SiteHeaderExt" style="visibility: visible;"><div id="top-strip" style="visibility: visible;">
+
+APPLY NOW: Achieve is hiring a spring/summer <a href="https://www.achievelifeskills.org/Apply">youth mentor</a> to help support <a href="https://www.achievelifeskills.org/Apply">program participants</a> and hiring program participants!
+
+</div>
+<div id="SiteHeader">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="site-header-logo">
+<img alt="" data-edittype="Image" id="" src="./Events_files/77540.jpg">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="TopMenuExt" style="visibility: visible;">
+<div id="TopMenu"><a id="ToggleMenu" onclick="Javascript:ShowMainMenu();"><span id="ToggleMenuPlusMinus">+</span>Menu</a>
+<ul id="MenuPackage" class="Hide">
+<li class="MenuItem">
+<a class="MenuTextLink" href="https://www.achievelifeskills.org/">Home</a>
+</li>
+<li class="MenuItem HasSubMenu">
+<a class="MenuTextLink" onclick="Javascript:ShowSubMenu(this);">About</a>
+<ul class="SubMenu LevelTwo">
+<li class="SubMenuItem">
+<a class="SubMenuLink" href="https://www.achievelifeskills.org/About">Background</a>
+</li>
+<li class="SubMenuItem">
+<a class="SubMenuLink" href="https://www.achievelifeskills.org/About#press">Press</a>
+</li>
+</ul>
+</li>
+<li class="MenuItem HasSubMenu">
+<a class="MenuTextLink" onclick="Javascript:ShowSubMenu(this);">Programs</a>
+<ul class="SubMenu LevelTwo">
+<li class="SubMenuItem">
+<a class="SubMenuLink" href="https://www.achievelifeskills.org/Little-Engine-Eatery">Little Engine Eatery</a>
+</li>
+<li class="SubMenuItem">
+<a class="SubMenuLink" href="https://www.achievelifeskills.org/Coffee-Shop">Coffee Shop</a>
+</li>
+<li class="SubMenuItem">
+<a class="SubMenuLink" href="https://www.achievelifeskills.org/Achieve-Social">Achieve Social</a>
+</li>
+</ul>
+</li>
+<li class="MenuItem HasSubMenu">
+<a class="MenuTextLink" onclick="Javascript:ShowSubMenu(this);">Connect</a>
+<ul class="SubMenu LevelTwo">
+<li class="SubMenuItem">
+<a class="SubMenuLink" href="https://www.achievelifeskills.org/Apply">Apply</a>
+</li>
+<li class="SubMenuItem">
+<a class="SubMenuLink" href="https://www.achievelifeskills.org/Inquiry">Volunteer</a>
+</li>
+<li class="SubMenuItem">
+<a class="SubMenuLink" href="https://www.achievelifeskills.org/Events#footer">Contact Us</a>
+</li>
+</ul>
+</li>
+<li class="MenuItem">
+<a class="MenuTextLink" href="https://www.achievelifeskills.org/Donate">Donate</a>
+</li>
+<li class="MenuItem">
+<a class="MenuTextLink MenuLinkOn" href="https://www.achievelifeskills.org/Events">Events</a>
+</li>
+</ul></div>
+</div></div>
+</div>
+<!--End Site Header-->
+
+<!--Top Menu-->
+
+<!--End Top Menu-->
+
+<div id="ContentExt">
+<!--Left Menu-->
+<div id="LeftMenu">
+
+</div>
+<!--End Left Menu-->
+
+<!--Content-->
+<div id="Content">
+	
+
+
+
+
+
+
+
+<div class="bar-beige">
+
+<div class="two-col-wrap" data-pagetemplate="Two-Col">
+
+<div>
+<p align="center"><img alt="" data-edittype="Image" id="" src="./Events_files/78957.png" style="Width: 100%;"></p>
+
+<p>Who will join our quest to <b>Level Up: Job Skills</b> to gain experience that will buy loot in real life?</p>
+
+<p>
+<b>Money Machine</b> – Hands-on food service &amp; POS training for sustainable employment.<br><b>Glitch Hunt</b> – Interactive workshop on spotting food prep hygiene errors.<br><b>Lunch Challenge</b> – Team-based meal prep exercise reinforcing food safety skills.<br><b>Interview Challenge</b> – Mock interviews with feedback to build confidence and professionalism.<br><b>Going Pro</b> – Workplace readiness training on professionalism and expectations.<br><b>Career Exploration</b> – Guided exploration of career paths and job opportunities.<br><b>Job Hunt: Level 1</b> – Hands-on job application support with a SWAP coach.</p>
+
+<p style="text-align: center;">contact info@achievelifeskills.org with any questions.</p>
+
+<p style="text-align: center;">
+<font class="S5389">
+<a data-edittype="Hyperlink" data-hltype="1" href="JavaScript:window.location.href=&#39;level&#39;;">Register here!</a></font>
+</p>
+
+<p><img alt="" data-edittype="Image" id="" src="./Events_files/78956.gif" style="Width: 100%;"></p>
+
+</div>
+
+<div>
+
+<div style="position: relative; width: 100%; height: 0; padding-top: 177.7778%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;" src="./Events_files/watch.html" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+
+</div>
+
+
+</div></div>
+</div>
+<!--End Content-->
+</div>
+
+<!--EndUserFooter-->
+<div id="EndUserFooterExt">
+<div id="EndUserFooter">
+
+
+
+
+
+
+
+
+<a id="footer"></a>
+
+
+<div data-editable="true" style="text-align: center;">
+<p>Connect With Us</p>
+
+
+
+<p>Don’t let FOMO get you down! Confirm your name and email below to stay informed of what we’re doing:</p>
+
+
+<!--
+<p>Don’t let FOMO get you down! Email us at <a data-edittype="Hyperlink" data-hltype="2" href="mailto:info@achievelifeskills.org" target="_blank">info@achievelifeskills.org</a> and we will add you to our mailing list. Stay informed of what we’re doing!:</p>
+</div>
+-->
+
+<!--start form-->
+
+
+<div class="signup-form">
+
+        <div style="text-align: left">
+          Name:<br>
+          <input type="text" id="txtName">
+          <span class="Red">*</span>
+        </div>    
+        <div style="text-align: left">
+          Email:<br>
+          <input type="text" id="txtEmail">
+          <span class="Red">*</span>
+        </div>
+        <div style="text-align: left; margin-top: 10px;">
+          <button class="donate-light" onclick="Javascript:SubmitMoosend(event);">Sign Up</button>
+        </div>
+
+</div>
+
+<!--end form-->
+
+<p style="text-align: center;"><a data-edittype="Hyperlink" data-hltype="1" href="JavaScript:window.location.href=&#39;Donate&#39;;" class="donate-dark" style="margin-left: auto; margin-right: auto;">Donate Today</a></p>
+
+<p data-editable="true" style="text-align: center;">
+Keep up with our events on social media<br>
+
+<a data-edittype="Hyperlink" data-hltype="2" href="https://www.facebook.com/LittleEngineEatery" target="_blank"><img alt="" id="" src="./Events_files/77590.png" style="Width: 40px;"></a>&nbsp;&nbsp;<a data-edittype="Hyperlink" data-hltype="2" href="https://www.instagram.com/Achieve_LittleEngineEatery/" target="_blank"><img alt="" id="" src="./Events_files/77591.png" style="Width: 40px;"></a>
+
+</p>
+
+
+
+
+<div class="two-col-wrap" data-pagetemplate="Two-Col">
+<div data-editable="true">
+<p>Mailing Address:<br>16417 CR 325<br>Buena Vista, CO 81211</p><p>Summer Food Trailer:<br>BV Heritage Museum<br>506 E Main St.<br>Buena Vista, CO 81211<br></p><p>info@achievelifeskills.org<br>719.395.4006</p>
+</div>
+<div data-editable="true">
+<p>Info:<br><a data-edittype="Hyperlink" data-hltype="1" href="JavaScript:window.location.href=&#39;Home&#39;;">Home<br></a><a data-edittype="Hyperlink" data-hltype="1" href="JavaScript:window.location.href=&#39;About&#39;;">About</a><br><a data-edittype="Hyperlink" data-hltype="1" href="JavaScript:window.location.href=&#39;Home#programs&#39;;">Programs</a></p>
+
+<p>Action:<br><a data-edittype="Hyperlink" data-hltype="1" href="JavaScript:window.location.href=&#39;Apply&#39;;">Learn Job &amp; Life Skills</a><br><a data-edittype="Hyperlink" data-hltype="1" href="JavaScript:window.location.href=&#39;Apply&#39;;">Become a Youth Mentor</a><br><a data-edittype="Hyperlink" data-hltype="1" href="JavaScript:window.location.href=&#39;Achieve-Social&#39;;">Join our Social Program</a><br><a data-edittype="Hyperlink" data-hltype="1" href="JavaScript:window.location.href=&#39;Inquiry&#39;;">Volunteer</a><br><a data-edittype="Hyperlink" data-hltype="1" href="JavaScript:window.location.href=&#39;Inquiry&#39;;">Mentor</a><br><a data-edittype="Hyperlink" data-hltype="1" href="JavaScript:window.location.href=&#39;Donate&#39;;">Donate</a><br><br></p>
+</div>
+</div>
+
+<div data-editable="true" style="text-align: center;">
+To request an accommodation to access materials, information, and/or services, please reach out!<br>©&nbsp;Achieve, Inc. dba Little Engine Eatery 2017-2025 | A registered 501(c)(3) EIN: 37-1860566
+</div>
+
+
+
+<!--       
+<div class="Row" style="background-color: #ffffff; color: #ff0000;"><asp:literal id="litResult" runat="server"></asp:literal></div>
+-->
+
+<!--
+        <div class="Row" style="font-style: italic;">Privacy: We will never sell or share your email address! We won't spam you.  Only pertinent content will be sent.</div>
+-->
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+
+<div class="Clear"></div>
+			
+</div>
+<!--End Main-->
+
+<!--gigshowcase.com footer-->
+<div id="GigshowcaseFooter">
+<a target="_blank" id="GigshowcaseLogo" href="http://gigshowcase.com/Ad.aspx?SiteID=723">powered by</a>
+</div>
+
+
+</form>
+
+
+</body></html>
