@@ -10,14 +10,14 @@ body {
 }
 
 header {
-  background: #4c2a85;
+  background: #ffffff;
   color: white;
   padding: 1rem;
   text-align: center;
 }
 
 .announcement {
-  background: #ffc107;
+  background: #d7b44c;
   color: #222;
   padding: 0.5rem;
 }
@@ -61,7 +61,7 @@ section {
 }
 
 .highlight {
-  color: white;
+  color: rgb(232, 230, 115);
 }
 
 .purple {
