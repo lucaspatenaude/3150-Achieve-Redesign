@@ -75,6 +75,7 @@ nav {
 /* Show dropdown menu when parent has focus or hover */
 .dropdown:hover .dropdown-menu,
 .dropdown:focus-within .dropdown-menu {
+  color: #29104b;
   display: block;
 }
 
@@ -85,10 +86,11 @@ nav {
   background: white;
   border: 1px solid #29104b;
   text-decoration: none;
+  min-width: max-content;
   left: 0;
   top: 70px; /* Position below the parent <li> */
   list-style: none;
-  padding: 0;
+  
   margin: 0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 1000;
@@ -96,11 +98,14 @@ nav {
 
 /* Style dropdown menu items */
 .dropdown-menu li {
-  padding: 10px 15px;
+  padding: 5px 0px;
+  padding-right: 30px;
+  text-align: left;
 }
 
 .dropdown-menu li a {
   color: #29104b;
+  text-align: left;
   text-decoration: none;
   display: block;
 }
