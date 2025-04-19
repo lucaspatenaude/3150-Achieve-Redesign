@@ -31,15 +31,18 @@ header {
 .main-nav li a {
   color: #29104b;
   text-decoration: none;
-  padding: 1rem;
+  padding: 0 15px;
   display: block;
 }
 
 .main-nav li a:hover {
   color: white;
   background: #29104b;
+  
 }
 
+/* Style Logo */
 .main-nav img {
-  height: 20px;
+  height: 60px;
+  padding: 10px 30px;
 }
