@@ -35,6 +35,7 @@ header {
 
 .main-nav li a {
   color: #29104b;
+  align-items: center; /* Center the <a> vertically */
   text-decoration: none;
   padding: 0 15px;
   display: block;
@@ -55,3 +56,49 @@ header {
   color: white; /* Change text color on hover */
 }
 
+/************************* DROPDOWN MENU *************************/
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: flex; /* Maintain flex alignment */
+  align-items: center; /* Center the "About" button vertically */
+}
+
+/* Hide dropdown menu by default */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  text-decoration: none;
+  left: 0;
+  top: 100%; /* Position below the parent <li> */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+/* Show dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Style dropdown menu items */
+.dropdown-menu li {
+  padding: 10px 15px;
+}
+
+.dropdown-menu li a {
+  color: #29104b;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu li:hover {
+  background: #29104b;
+}
+
+.dropdown-menu li:hover a {
+  color: white;
+}

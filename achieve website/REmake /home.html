@@ -9,21 +9,29 @@
 </head>
 <body>
 
-  <header class="site-header">
-    
-    <div class="announcement"> 
+  <header class="site-header" role="banner">
+    <div class="announcement" role="alert"> 
       APPLY NOW: Achieve is hiring a spring/summer <a href="Apply">youth mentor</a> to help support <a href="Apply">program participants</a>!
     </div>
     
-    <nav class="main-nav">
+    <nav class="main-nav" role="navigation" aria-label="Main Navigation">
       <ul>
         <div class="logo">
-          <a href="/">
-            <img src="../Remake /Home Images/logo.svg" alt="Achieve Logo"> 
+          <a href="/" aria-label="Home">
+            <img src="../Remake /Home Images/logo.svg" alt="Achieve Logo">
           </a>
         </div>
-        <li><a href="/">Home</a></li>
-        <li><a href="About">About</a></li>
+        <li><a href="/" aria-current="page">Home</a></li>
+        
+        <div class="dropdown">
+          <a href="About" aria-haspopup="true" aria-expanded="false">About</a>
+          <div class="dropdown-menu" role="menu">
+            <li role="menuitem"><a href="Mission">Our Mission</a></li>
+            <li role="menuitem"><a href="Team">Our Team</a></li>
+            <li role="menuitem"><a href="History">Our History</a></li>
+          </div>
+        </div>
+        
         <li><a href="Programs">Programs</a></li>
         <li><a href="Connect">Connect</a></li>
         <li><a href="Donate">Donate</a></li>
