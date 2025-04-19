@@ -47,8 +47,12 @@ header {
 }
 
 /* Add hover effect */
-.main-nav li:hover, .dropdown:hover {
+.main-nav li:hover, .dropdown:hover  {
   background: #29104b; /* Apply hover effect to the <li> */
+}
+
+.dropdown:hover {
+  color: white;
 }
 
 .main-nav li a:hover {
@@ -64,7 +68,13 @@ header {
   align-items: center; /* Center the "About" button vertically */
 }
 
-/* Hide dropdown menu by default */
+/* Show dropdown menu when parent has focus or hover */
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+  display: block;
+}
+
+/* Ensure dropdown menu is hidden by default */
 .dropdown-menu {
   display: none;
   position: absolute;
@@ -80,11 +90,6 @@ header {
   z-index: 1000;
 }
 
-/* Show dropdown menu on hover */
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
-
 /* Style dropdown menu items */
 .dropdown-menu li {
   padding: 10px 15px;
@@ -98,8 +103,9 @@ header {
 
 .dropdown-menu li:hover {
   background: #29104b;
+  color: white;
 }
 
-.dropdown-menu li:hover a {
+.dropdown-menu li:hover a, .dropdown li a:hover {
   color: white;
 }
