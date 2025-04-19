@@ -8,14 +8,14 @@
 </head>
 <body>
 
-  <header class="site-header">
+  <header class="site-header" role="banner">
     <div class="announcement"> 
       APPLY NOW: Achieve is hiring a spring/summer <a href="Apply">youth mentor</a> to help support <a href="Apply">program participants</a>!
     </div>
     <div class="logo">
       <img src="../Remake /Home Images/77540.jpg" alt="Achieve Logo"> 
     </div>
-    <nav class="main-nav">
+    <nav class="main-nav" role="navigation">
       <ul>
 
         <li><a href="/">Home</a></li>
@@ -29,7 +29,7 @@
   </header>
 
 
-  <main>
+  <main role="main">
     <section class="intro">
       <h2 class="center">Envisioning a world where neurodivergent individuals thrive!</h2>
       <p class="center">Don't miss the free <strong>Level-Up Job Skills Training</strong> scheduled for April 25, 2025. Sponsored by Salida Sunrise Rotary and in partnership with SWAP and the Colorado Rural Workforce Consortium, this event includes POS training, mock interviews, job application support, and more.</p>
@@ -97,15 +97,15 @@
     </section>
   </main>
 
-  <footer>
-    <div class="signup">
-      <h3>Connect With Us</h3>
-      <p>Stay informed of what we're doing. Enter your name and email:</p>
+  <footer role="contentinfo">
+    <div class="signup" role="form" aria-labelledby="footerform" aria-describedby="footerdescribe">
+      <h3 id="footerform">Connect With Us</h3>
+      <p id="footerdescribe">Stay informed of what we're doing. Enter your name and email:</p>
       <form>
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name">
+        <input type="text" id="name" name="name" aria-required="true">
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
+        <input type="email" id="email" name="email" aria-required="true">
         <button type="submit">Sign Up</button>
       </form>
     </div>

@@ -4,18 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Achieve - Donate</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
 
-  <header class="site-header">
+  <header class="site-header" role="banner">
     <div class="announcement"> 
       APPLY NOW: Achieve is hiring a spring/summer <a href="Apply">youth mentor</a> to help support <a href="Apply">program participants</a>!
     </div>
     <div class="logo">
       <img src="../Remake /Home Images/77540.jpg" alt="Achieve Logo"> 
     </div>
-    <nav class="main-nav">
+    <nav class="main-nav" role="navigation">
       <ul>
 
         <li><a href="/">Home</a></li>
@@ -27,10 +27,13 @@
       </ul>
     </nav>
   </header>
-  <section id="donate-form" aria-labelledby="donate-form-title">
+
+  
+  <section id="donate-form" role="main">
     <h2 id="donate-form-title">We Can't Do It Without You - Donate Today</h2>
     <div class="form-box" role="form" aria-label="Donation Form">
-      <h3>Achieve, Inc.</h3>
+      <fieldset>
+      <legend><h2>Achieve, Inc.</h2></legend>
       <div class="amount-options">
         <label><input type="radio" name="amount" value="10"> $10</label>
         <label><input type="radio" name="amount" value="25"> $25</label>
@@ -42,6 +45,7 @@
           <input type="number" id="customAmount" name="customAmount" placeholder="$ Amount" aria-label="Enter custom amount">
         </label>
       </div>
+    </fieldset>
       <div class="recurring">
         <label><input type="checkbox" name="recurring"> Recurring monthly donation</label>
       </div>
@@ -51,17 +55,16 @@
       
        
       
-    </form>
-  </section>
-  <footer>
-    <div class="signup">
-      <h3>Connect With Us</h3>
-      <p>Stay informed of what we're doing. Enter your name and email:</p>
+
+  <footer role="contentinfo">
+    <div class="signup" role="form" aria-labelledby="footerform" aria-describedby="footerdescribe">
+      <h3 id="footerform">Connect With Us</h3>
+      <p id="footerdescribe">Stay informed of what we're doing. Enter your name and email:</p>
       <form>
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name">
+        <input type="text" id="name" name="name" aria-required="true">
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
+        <input type="email" id="email" name="email" aria-required="true">
         <button type="submit">Sign Up</button>
       </form>
     </div>
