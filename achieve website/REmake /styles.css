@@ -9,18 +9,8 @@ body {
   line-height: 1.6;
 }
 
-header {
-  background: #ffffff;
-  color: white;
-  padding: 1rem;
-  text-align: center;
-}
 
-.announcement {
-  background: #d7b44c;
-  color: #222;
-  padding: 0.5rem;
-}
+
 
 .logo img {
   max-width: 200px;

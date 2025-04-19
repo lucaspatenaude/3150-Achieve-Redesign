@@ -1,8 +1,28 @@
+header {
+  background: #ffffff;
+  color: white;
+  text-align: center;
+}
+
+.announcement {
+  background: #d7b44c;
+  color: #222;
+  height: 40px;
+  display: flex; /* Enable Flexbox */
+  align-items: center; /* Vertically center content */
+  justify-content: center; /* Horizontally center content (optional) */
+}
+
+.announcement a {
+  margin: 0; /* Remove default margin */
+  padding: 0 5px; /* Add some padding for spacing */
+}
+
 .main-nav ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   list-style: none;
+  align-items: center;
   padding: 0;
   margin: 0;
   background: white;
@@ -16,5 +36,10 @@
 }
 
 .main-nav li a:hover {
+  color: white;
   background: #29104b;
+}
+
+.main-nav img {
+  height: 20px;
 }
