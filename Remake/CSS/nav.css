@@ -1,0 +1,113 @@
+header {
+  background: #ffffff;
+  color: white;
+  text-align: center;
+}
+
+.announcement {
+  background: #d7b44c;
+  color: #222;
+  height: 40px;
+  display: flex; /* Enable Flexbox */
+  align-items: center; /* Vertically center content */
+  justify-content: center; /* Horizontally center content (optional) */
+}
+
+.announcement a {
+  margin: 0; /* Remove default margin */
+  padding: 0 5px; /* Add some padding for spacing */
+}
+
+.main-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: white;
+}
+
+.main-nav li {
+  display: flex; /* Make <li> a flex container */
+  align-items: center; /* Center the <a> vertically */
+}
+
+.main-nav li a {
+  color: #29104b;
+  align-items: center; /* Center the <a> vertically */
+  text-decoration: none;
+  padding: 0 15px;
+  display: block;
+}
+
+/* Style Logo */
+.main-nav img {
+  height: 40px;
+  padding: 10px 30px;
+}
+
+/* Add hover effect */
+.main-nav li:hover, .dropdown:hover  {
+  background: #29104b; /* Apply hover effect to the <li> */
+}
+
+.dropdown:hover {
+  color: white;
+}
+
+.main-nav li a:hover {
+  color: white; /* Change text color on hover */
+}
+
+/************************* DROPDOWN MENU *************************/
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: flex; /* Maintain flex alignment */
+  align-items: center; /* Center the "About" button vertically */
+}
+
+/* Show dropdown menu when parent has focus or hover */
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+  display: block;
+}
+
+/* Ensure dropdown menu is hidden by default */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background: white;
+  border: 1px solid #29104b;
+  text-decoration: none;
+  left: 0;
+  top: 70px; /* Position below the parent <li> */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+/* Style dropdown menu items */
+.dropdown-menu li {
+  padding: 10px 15px;
+}
+
+.dropdown-menu li a {
+  color: #29104b;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu li:hover {
+  background: #29104b;
+}
+
+
+/* Keep dropdown button text white when hovering over subitems */
+.dropdown:hover .dropdown-title,
+.dropdown:focus-within .dropdown-title {
+  color: white;
+}

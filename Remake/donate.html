@@ -4,31 +4,57 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Achieve - Donate</title>
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./CSS/styles.css">
+  <link rel="stylesheet" href="./CSS/nav.css">
 </head>
 <body>
 
   <header class="site-header" role="banner">
-    <div class="announcement"> 
+    <div class="announcement" role="alert"> 
       APPLY NOW: Achieve is hiring a spring/summer <a href="Apply">youth mentor</a> to help support <a href="Apply">program participants</a>!
     </div>
-    <div class="logo">
-      <img src="../Remake /Home Images/77540.jpg" alt="Achieve Logo"> 
-    </div>
-    <nav class="main-nav" role="navigation">
+    
+    <nav class="main-nav" role="navigation" aria-label="Main Navigation">
       <ul>
+        <div class="logo">
+          <a href="/" aria-label="Home">
+            <img src="../Remake/Images/logo.svg" alt="Achieve Logo">
+          </a>
+        </div>
+        <li><a href="/" aria-current="page">Home</a></li>
+        
+        <div class="dropdown">
+          <li><a class="dropdown-title" href="About" aria-haspopup="true" aria-expanded="false">About</a></li>
+          <div class="dropdown-menu" role="menu">
+            <li role="menuitem"><a href="Background">Background</a></li>
+            <li role="menuitem"><a href="Press">Press</a></li>
+          </div>
+        </div>
 
-        <li><a href="/">Home</a></li>
-        <li><a href="About">About</a></li>
-        <li><a href="Programs">Programs</a></li>
-        <li><a href="Connect">Connect</a></li>
+        <div class="dropdown">
+          <li><a class="dropdown-title" href="Programs" aria-haspopup="true" aria-expanded="false">Programs</a></li>
+          <div class="dropdown-menu" role="menu">
+            <li role="menuitem"><a href="Little Engine Eatery">Little Engine Eatery</a></li>
+            <li role="menuitem"><a href="Coffee Shop">Coffee Shop</a></li>
+            <li role="menuitem"><a href="Achieve Social">Achieve Social</a></li>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <li><a class="dropdown-title" href="Contact" aria-haspopup="true" aria-expanded="false">Contact</a></li>
+          <div class="dropdown-menu" role="menu">
+            <li role="menuitem"><a href="Apply">Apply</a></li>
+            <li role="menuitem"><a href="Volunteer">Volunteer</a></li>
+            <li role="menuitem"><a href="Contact Us">Contact Us</a></li>
+          </div>
+        </div>
+
         <li><a href="Donate">Donate</a></li>
         <li><a href="Events">Events</a></li>
       </ul>
     </nav>
   </header>
 
-  
   <section id="donate-form" role="main">
     <h2 id="donate-form-title">We Can't Do It Without You - Donate Today</h2>
     <div class="form-box" role="form" aria-label="Donation Form">
