@@ -18,6 +18,10 @@ header {
   padding: 0 5px; /* Add some padding for spacing */
 }
 
+nav {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 .main-nav ul {
   display: flex;
   flex-wrap: wrap;
