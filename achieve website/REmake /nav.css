@@ -22,7 +22,6 @@ header {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  align-items: stretch; /* Stretch items to match the height of the nav bar */
   padding: 0;
   margin: 0;
   background: white;
@@ -48,11 +47,11 @@ header {
 }
 
 /* Add hover effect */
-.main-nav li:hover {
+.main-nav li:hover, .dropdown:hover {
   background: #29104b; /* Apply hover effect to the <li> */
 }
 
-.main-nav li:hover a {
+.main-nav li a:hover {
   color: white; /* Change text color on hover */
 }
 
@@ -69,9 +68,11 @@ header {
 .dropdown-menu {
   display: none;
   position: absolute;
+  background: white;
+  border: 1px solid #29104b;
   text-decoration: none;
   left: 0;
-  top: 100%; /* Position below the parent <li> */
+  top: 70px; /* Position below the parent <li> */
   list-style: none;
   padding: 0;
   margin: 0;
@@ -83,6 +84,7 @@ header {
 .dropdown:hover .dropdown-menu {
   display: block;
 }
+
 
 /* Style dropdown menu items */
 .dropdown-menu li {
