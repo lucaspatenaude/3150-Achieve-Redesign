@@ -28,26 +28,7 @@ header {
   display: block;
 }
 
-.main-nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  background: #370b6b;
-}
 
-.main-nav li a {
-  color: white;
-  text-decoration: none;
-  padding: 1rem;
-  display: block;
-}
-
-.main-nav li a:hover {
-  background: #29104b;
-}
 
 main {
   padding: 0;
