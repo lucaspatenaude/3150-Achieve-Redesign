@@ -22,10 +22,15 @@ header {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  align-items: center;
+  align-items: stretch; /* Stretch items to match the height of the nav bar */
   padding: 0;
   margin: 0;
   background: white;
+}
+
+.main-nav li {
+  display: flex; /* Make <li> a flex container */
+  align-items: center; /* Center the <a> vertically */
 }
 
 .main-nav li a {
@@ -35,14 +40,18 @@ header {
   display: block;
 }
 
-.main-nav li a:hover {
-  color: white;
-  background: #29104b;
-  
-}
-
 /* Style Logo */
 .main-nav img {
   height: 60px;
   padding: 10px 30px;
 }
+
+/* Add hover effect */
+.main-nav li:hover {
+  background: #29104b; /* Apply hover effect to the <li> */
+}
+
+.main-nav li:hover a {
+  color: white; /* Change text color on hover */
+}
+
