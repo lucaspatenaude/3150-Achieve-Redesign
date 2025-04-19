@@ -178,3 +178,77 @@ footer {
 .footer-columns a:hover {
   text-decoration: underline;
 }
+#donate-form {
+  background-color: #f4e6c1;
+  padding: 4rem 1.5rem;
+  font-family: Arial, sans-serif;
+  color: #222;
+  text-align: center;
+}
+
+#donate-form h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+/* === Inner Form Box === */
+#donate-form .form-box {
+  background-color: #fff;
+  max-width: 360px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* === Amount Options === */
+#donate-form .amount-options {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+#donate-form .amount-options label {
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#donate-form .amount-options input[type="number"] {
+  margin-left: 0.5rem;
+  padding: 0.5rem;
+  width: 120px;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* === Recurring Checkbox === */
+#donate-form .recurring {
+  text-align: left;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+/* === Submit Button === */
+#donate-form button {
+  background-color: #333;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.75rem;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#donate-form button:hover {
+  background-color: #000;
+}
