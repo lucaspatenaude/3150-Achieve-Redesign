@@ -42,7 +42,7 @@ header {
 
 /* Style Logo */
 .main-nav img {
-  height: 60px;
+  height: 40px;
   padding: 10px 30px;
 }
 
@@ -103,9 +103,11 @@ header {
 
 .dropdown-menu li:hover {
   background: #29104b;
-  color: white;
 }
 
-.dropdown-menu li:hover a, .dropdown li a:hover {
+
+/* Keep dropdown button text white when hovering over subitems */
+.dropdown:hover .dropdown-title,
+.dropdown:focus-within .dropdown-title {
   color: white;
 }
