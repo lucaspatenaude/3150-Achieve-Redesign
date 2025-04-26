@@ -60,7 +60,7 @@
     </nav>
   </header>
 
- <section id="donate-form" role="main">
+ <section id="donate-form">
   <h2 id="donate-form-title">We Can't Do It Without You - Donate Today</h2>
   <div class="form-box" role="form" aria-label="Donation Form">
     <form>
@@ -79,20 +79,19 @@
           <label>
             <input type="radio" name="amount" value="75"> $75
           </label>
-          <label>
-            <input type="radio" name="amount" value="other" aria-describedby="customAmountLabel"> 
-            Other 
-            <input 
-              type="number" 
-              id="customAmount" 
-              name="customAmount" 
-              placeholder="$ Amount" 
-              aria-label="Enter custom amount"
-              min="1" 
-              max="9999" 
-              step="any"
-            >
+          <label for="customAmount">
+            <input type="radio" id="customAmount" name="amount" value="other"> Other
           </label>
+          <input 
+            type="number" 
+            id="customAmountInput" 
+            name="customAmount" 
+            placeholder="$ Amount" 
+            aria-label="Enter custom amount"
+            min="1" 
+            max="9999" 
+            step="any"
+          >
         </div>
       </fieldset>
       <div class="recurring">
@@ -105,10 +104,7 @@
   </div>
 </section>
       
-       
-      
-
-  <footer role="contentinfo">
+  <footer>
     <div class="signup" role="form" aria-labelledby="footerform" aria-describedby="footerdescribe">
       <h3 id="footerform">Connect With Us</h3>
       <p id="footerdescribe">Stay informed of what we're doing. Enter your name and email:</p>
