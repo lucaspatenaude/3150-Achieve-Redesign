@@ -59,7 +59,7 @@ nav {
   color: white;
 }
 
-.main-nav li a:hover {
+.main-nav li:hover a {
   color: white; /* Change text color on hover */
 }
 
