@@ -55,29 +55,50 @@
     </nav>
   </header>
 
-  <section id="donate-form" role="main">
-    <h2 id="donate-form-title">We Can't Do It Without You - Donate Today</h2>
-    <div class="form-box" role="form" aria-label="Donation Form">
+ <section id="donate-form" role="main">
+  <h2 id="donate-form-title">We Can't Do It Without You - Donate Today</h2>
+  <div class="form-box" role="form" aria-label="Donation Form">
+    <form>
       <fieldset>
-      <legend><h3>Achieve, Inc.</h3></legend>
-      <div class="amount-options">
-        <label><input type="radio" name="amount" value="10"> $10</label>
-        <label><input type="radio" name="amount" value="25"> $25</label>
-        <label><input type="radio" name="amount" value="50"> $50</label>
-        <label><input type="radio" name="amount" value="75"> $75</label>
+        <legend><h3>Achieve, Inc.</h3></legend>
+        <div class="amount-options">
+          <label>
+            <input type="radio" name="amount" value="10" required> $10
+          </label>
+          <label>
+            <input type="radio" name="amount" value="25"> $25
+          </label>
+          <label>
+            <input type="radio" name="amount" value="50"> $50
+          </label>
+          <label>
+            <input type="radio" name="amount" value="75"> $75
+          </label>
+          <label>
+            <input type="radio" name="amount" value="other" aria-describedby="customAmountLabel"> 
+            Other 
+            <input 
+              type="number" 
+              id="customAmount" 
+              name="customAmount" 
+              placeholder="$ Amount" 
+              aria-label="Enter custom amount"
+              min="1" 
+              max="9999" 
+              step="any"
+            >
+          </label>
+        </div>
+      </fieldset>
+      <div class="recurring">
         <label>
-          <input type="radio" name="amount" value="other" aria-describedby="customAmountLabel"> 
-          Other 
-          <input type="number" id="customAmount" name="customAmount" placeholder="$ Amount" aria-label="Enter custom amount">
+          <input type="checkbox" name="recurring"> Recurring monthly donation
         </label>
       </div>
-    </fieldset>
-      <div class="recurring">
-        <label><input type="checkbox" name="recurring"> Recurring monthly donation</label>
-      </div>
       <button type="submit">Donate</button>
-      
-  </section>
+    </form>
+  </div>
+</section>
       
        
       
