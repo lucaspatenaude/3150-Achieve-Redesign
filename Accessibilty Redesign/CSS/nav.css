@@ -134,7 +134,6 @@ nav {
   color: white; /* Change text color on hover */
 }
 
-
 /* Keep dropdown button text white when hovering over subitems */
 .dropdown:hover .dropdown-title,
 .dropdown:focus-within .dropdown-title {
