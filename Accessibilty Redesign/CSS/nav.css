@@ -60,7 +60,7 @@ nav {
 }
 
 .main-nav li:hover a {
-  color: white; /* Change text color on hover */
+  color: #29104b; /* Change text color on hover */
 }
 
 /************************* DROPDOWN MENU *************************/
@@ -75,13 +75,13 @@ nav {
 /* Show dropdown menu when parent has focus or hover */
 .dropdown:hover .dropdown-menu,
 .dropdown:focus-within .dropdown-menu {
-  color: #29104b;
-  display: block;
+  color: white;
+  display: block !important;
 }
 
 /* Ensure dropdown menu is hidden by default */
 .dropdown-menu {
-  display: none;
+  display: none !important;
   position: absolute;
   background: white;
   border: 1px solid #29104b;
@@ -112,6 +112,10 @@ nav {
 
 .dropdown-menu li:hover {
   background: #29104b;
+}
+
+.dropdown-menu li:hover a {
+  color: white; /* Change text color on hover */
 }
 
 
