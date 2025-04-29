@@ -22,6 +22,12 @@ section {
   width: 100%;
 }
 
+section.intro {
+  background-color: rgb(228, 219, 182);
+  width: 100%;
+  padding: 10px 0;
+}
+
 .highlight {
   color: rgb(232, 230, 115);
 }
