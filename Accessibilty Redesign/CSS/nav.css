@@ -51,16 +51,16 @@ nav {
 }
 
 /* Add hover effect */
-.main-nav li:hover, .dropdown:hover  {
+.main-nav li:hover, .dropdown:hover,
+.main-nav li:focus-within, .dropdown:focus-within   {
   background: #29104b; /* Apply hover effect to the <li> */
-}
-
-.dropdown:hover {
   color: white;
 }
 
-.main-nav li:hover a {
-  color: #29104b; /* Change text color on hover */
+/* Add this rule to target non-dropdown navbar items */
+.main-nav li:not(.dropdown):hover a,
+.main-nav li:not(.dropdown):focus-within a {
+  color: white; /* Change text color to white on hover */
 }
 
 /************************* SKIP NAVIGATION LINK *************************/
